@@ -1,0 +1,844 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #a9dfed;
+}
+
+.hover {
+
+    cursor: pointer;
+}
+
+.main {
+
+    margin: 0 auto;
+    width: 800px;
+    position: relative;
+
+}
+
+
+.menu {
+
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+
+.image {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.login {
+
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 400px;
+    height: 380px;
+
+}
+
+.login-cab {
+
+    text-align: center;
+    font-size: 25px;
+    font-display: bold;
+    font-family: sans-serif; 
+    border-bottom: 1px solid grey;
+
+}
+
+.login-elements {
+    
+    width: 280px;
+    height: 140px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 6%;
+    font-family: sans-serif;
+    
+}
+
+.login-elements p {
+
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-top: 15px;
+    margin-bottom: 3px;
+
+}
+
+h6 {
+
+    margin-block-start: 5%;
+    margin-block-end: 5%;
+}
+
+p {
+
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+}
+
+.login-rodape {
+
+    width: 195px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    color: #a4dfa5;
+    font-family: sans-serif; 
+    margin-bottom: 2px;
+
+}
+
+.login-rodape p {
+
+    width: 195px;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-top: 2px;
+}
+
+.butt-entrar {
+
+    position: relative;
+    margin: 0 auto;
+    width: 70px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-left: 47px;
+    
+}
+
+.butt-entrar button{
+
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #7f7f7f;
+    border: none;
+    border-radius: 5px; 
+}
+
+.butt-entrar button:hover{
+
+    cursor: pointer;
+
+}
+
+.info {
+
+    width: 400px;
+    height: 380px;
+    float: left;
+
+}
+
+.info p{
+
+    margin: 5px;
+
+}
+
+.text-1 {
+
+    position: relative;
+    margin: 0 auto;
+    background-color: #d0d0d0;
+    border-radius: 10px;
+    width: 360px;
+    height: 169px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.text-2 {
+
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 360px;
+    height: 169px;
+    padding: 5px;
+
+}
+
+.msg-erro {
+
+    color: red;
+    font-size: 12px;
+    margin-top: 1px !important;    
+    
+}
+
+.msg-erro-geral {
+
+    color: red;
+    font-size: 12px;
+
+}
+
+.usuario {
+
+    border-radius: 10px;
+    background-color: #7f7f7f;
+    width: 600px;
+    height: 40px;
+    margin-bottom: 20px; 
+    font-weight: bold;
+    font-family: Arial;
+
+}
+
+.usuario-lab {
+
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-left: 15px;
+
+}
+
+.info-user {
+
+    float: right;
+    border-radius: 10px;
+    background-color: #7f7f7f;
+    width: 600px;
+    height: 40px;
+    margin-bottom: 20px;
+
+}
+
+.usuario-label p {
+
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+
+}
+
+.perfil-label {
+
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    width: 260px;
+
+}
+
+.perfil {
+
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 300px;
+    background-color: #e7e7e7;
+    border-radius: 20px
+
+}
+
+.perfil p{
+
+    padding-left: 120px;
+    padding-top: 80px;
+    font-family: sans-serif;
+}
+
+.perfil select{
+
+    margin-top: 10px;
+    margin-left: 120px;
+    width: 240px;
+    
+}
+
+.perfil button {
+
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: #7f7f7f;
+    border: none;
+    border-radius: 10px; 
+    float: right;
+    margin-top: 110px;
+    margin-right: 80px;
+}
+
+.perfil button:hover { 
+
+    cursor: pointer;
+
+}
+
+.menu-opcoes {
+
+    float: left;
+    text-align: center;
+
+}
+
+.menu-opcoes p {
+
+    padding-top: 6px; 
+    width: 70px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.menu-opcoes p:hover {
+
+    cursor: pointer;
+
+}
+
+.inserir {
+
+    margin-left: 10px;
+    width: 160px;
+    height: 30px;
+    border:  1px solid #7f7f7f;
+
+}
+
+.editar {
+
+    margin-left: 10px;
+    width: 160px;
+    height: 30px;
+    border-top: none !important;
+    border:  1px solid #7f7f7f;
+
+}
+
+.visualizar {
+
+    margin-left: 10px;
+    width: 160px;
+    height: 30px;
+    border-top: none !important;
+    border:  1px solid #7f7f7f;
+
+}
+
+.controla-horas {
+
+    float: right;
+    border-radius: 10px;
+    border: 1px solid  #7f7f7f;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 20px;
+
+}
+
+.controla-horas-consulta {
+
+    float: right;
+    border-radius: 10px;
+    border: 1px solid  #7f7f7f;
+    width: 600px;
+    height: 480px;
+    margin-bottom: 20px;
+
+}
+
+.numero-1 {
+  
+    float: right;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+    margin-right: 20px;
+    background-color: #7f7f7f;
+    color: white;
+
+}
+
+.numero-2 {
+  
+    margin-top: -24px;
+    float: right;
+    width: 18px;
+    height: 18px;
+    background-color: #7f7f7f;
+    color: white;
+
+}
+
+.numero-3 {
+  
+    margin-top: -24px;
+    float: right;
+    width: 18px;
+    height: 18px;
+    background-color: #7f7f7f;
+    color: white;
+
+}
+
+.numero-4 {
+  
+    margin-top: -24px;
+    float: right;
+    width: 18px;
+    height: 18px;
+    background-color: #7f7f7f;
+    color: white;
+
+}
+
+.insere-hora p {
+
+    font-family: sans-serif;
+    font-size: 22px;
+    font-display: bold;
+    padding-top: 5px; 
+    padding-left: 15px;
+
+}
+
+.insere-hora-menu {
+
+    position: relative;
+    margin: 0 auto;
+    width: 570px;
+    height: 95px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+
+}
+
+.msg-hora-invalida {
+
+    margin-top: 5px;
+
+}
+
+.msg-hora-invalida p{
+
+    color: red;
+    font-size: 12px !important;
+
+}
+
+.data {
+
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 5px;
+
+}
+
+.data p {
+
+    font-size: 15px !important;
+    padding-top: 0px !important; 
+    padding-left: 0px !important;
+    margin-bottom: 5px;
+
+}
+
+.data input {
+
+    width: 100px;
+
+}
+
+.hora-entrada {
+
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
+.hora-entrada p {
+
+    font-size: 15px !important;
+    padding-top: 0px !important; 
+    padding-left: 0px !important;
+    margin-bottom: 5px;
+
+}
+
+.hora-entrada input {
+
+    width: 100px;
+
+}
+
+.hora-saida {
+
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
+.hora-saida p {
+
+    font-size: 15px !important;
+    padding-top: 0px !important; 
+    padding-left: 0px !important;
+    margin-bottom: 5px;
+
+}
+
+.hora-saida input {
+
+    width: 100px;
+
+}
+
+.justificativa {
+
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
+.justificativa p {
+
+    font-size: 15px !important;
+    padding-top: 0px !important; 
+    padding-left: 0px !important;
+    margin-bottom: 5px;
+
+}
+
+.justificativa select {
+
+    width: 180px;
+    height: 21px;
+
+}
+
+
+.butt-insere-hora button {
+
+    width: 130px;
+    height: 30px;
+    color: white;
+    background-color: #7f7f7f;
+    border: none;
+    border-radius: 10px; 
+    margin-top: 10px;
+    margin-left: 400px;
+
+}
+
+.lista-horas p{
+
+    font-family: sans-serif;
+    font-size: 22px;
+    font-display: bold;
+    padding-top: 5px; 
+    margin-top: 10px;
+    padding-left: 0px !important; 
+
+}
+
+.lista-horas-menu {
+
+    position: relative;
+    margin: 0 auto;
+    width: 570px;
+    height: 140px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+
+}
+
+.tabela-horas table {
+
+    background-color: white;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 550px !important; 
+    border: 1px solid #7f7f7f;
+    border-collapse: collapse;
+
+}
+
+th, td {
+
+    border: 1px solid #7f7f7f;
+    border-collapse: collapse;
+
+
+}
+
+.tabela-horas select {
+
+    width: 100%;
+
+}
+
+.editar-icon {
+
+    float: left;
+    margin-left: 7px;
+    width: 18px;
+    height: 18px;
+
+}
+
+.excluir-icon {
+
+    margin-left: 5px;
+    float: left;
+    width: 18px;
+    height: 18px;
+
+}
+
+.legenda {
+
+    float: left;
+    width: 250px;
+    height: 150px;
+}
+
+.legenda p{
+
+    font-family: sans-serif;
+    font-size: 22px;
+    font-display: bold;
+    padding-left: 0px !important; 
+    margin-top: 5px !important;
+
+}
+
+.legenda-edit {
+
+    float: left;
+}
+
+.legenda-edit p {
+
+    float: right;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    font-size: 18px;
+    margin-left: 2px;
+
+}
+
+.legenda-excluir {
+
+    float: left;
+    margin-left: 20px;
+
+}
+
+.legenda-excluir p {
+
+    float: right;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    font-size: 18px;
+    margin-left: 2px;
+
+}
+
+.btn-voltar {
+
+    width: 150px;
+    height: 30px;
+    float: left;
+    margin-left: 20px;
+
+}
+
+.btn-voltar button {
+
+    width: 130px;
+    height: 30px;
+    margin-top: 30px;
+    float: left;
+    color: white;
+    background-color: #7f7f7f;
+    border: none;
+    border-radius: 10px; 
+
+}
+
+.numero-5 {
+  
+    float: right;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    margin-top: 25px;
+    background-color: #7f7f7f;
+    color: white;
+
+}
+
+.btn-enviar {
+
+    width: 150px;
+    height: 30px;
+    float: right;
+
+}
+
+.btn-enviar button {
+
+    width: 130px;
+    height: 30px;
+    margin-top: 30px;
+    float: right;
+    color: white;
+    background-color: #7f7f7f;
+    border: none;
+    border-radius: 10px; 
+
+}
+
+.legenda-consulta {
+
+    float: left;
+    width: 500px;
+    height: 150px;
+}
+
+.legenda-consulta p{
+
+    font-family: sans-serif;
+    font-size: 22px;
+    font-display: bold;
+    padding-left: 0px !important; 
+    margin-top: 5px !important;
+
+}
+
+.legenda-consulta-imprimir {
+
+    float: left;
+}
+
+.legenda-consulta-imprimir p {
+
+    float: right;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    font-size: 16px;
+    margin-left: 2px;
+
+}
+
+.legenda-consulta-excel {
+
+    float: left;
+    margin-left: 20px;
+
+}
+
+.legenda-consulta-excel p {
+
+    float: right;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    font-size: 16px;
+    margin-left: 2px;
+
+}
+
+.legenda-consulta-pdf {
+
+    float: left;
+    margin-left: 20px;
+
+}
+
+.legenda-consulta-pdf p {
+
+    float: right;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    font-size: 16px;
+    margin-left: 2px;
+
+}
+
+.butt-imprimir {
+
+    float: left;
+    margin-left: 350px;
+    margin-top: 10px;
+} 
+
+.butt-excel {
+
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+} 
+
+.butt-pdf {
+
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+} 
+
+.status-titulo {
+
+    margin-top: 40px;
+    width: 100px;
+
+}
+
+.status-titulo p {
+
+    margin-bottom: -7px;
+
+}
+
+.status {
+
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    width: 570px;
+    height: 50px;
+
+}
+
+.status p{
+
+    padding-top: 15px !important;
+    margin-left: 35px !important; 
+    font-size: 18px !important;
+
+}
