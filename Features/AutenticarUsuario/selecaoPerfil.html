@@ -4,27 +4,36 @@
         <meta charset="UTF-8"/>
         <title>SAH</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="D:\Recursos\SistemaAjusteHoras\wwwroot\css\estilo.css">
+        <link rel="stylesheet" type="text/css" href="D:\Recursos\SistemaAjusteHoras\wwwroot\css\selecaoPerfil.css">
     </head>
     <body>
-        <div id="main" class="main">
-            <div id="img" class="image">
-                <img src="D:\Recursos\SistemaAjusteHoras\Assets\Imagens\capa.png" alt="capa"/>
-            </div>
-            <div class="usuario">
-                <div class="usuario-lab"><p>Usuário:</p></div>
-            </div>
-            <div class="perfil">
-                <p>Perfil de usuário</p>
-                <select>
-                        <option value="trabalhador">Trabalhador</option>
-                        <option value="coord-curso">Coordenador de Curso</option>
-                        <option value="coord-nucleo">Coordenador do Núcleo Pedagógico</option>
-                </select>
-                <button>Acessar</button>
-            </div>
-        </div>
         
+        <div id="main" class="container bg-info overflow-hidden">
+            <div class="col">
+                <div class="row p-3 border bg-danger justify-content-center">
+                    
+                    <img class="image-fluid image" 
+                         src="D:\Recursos\SistemaAjusteHoras\Assets\Imagens\profile.jpg" 
+                         alt="imagem de perfil"/>
+                </div>
+                                
+                <div class="row p-3 border bg-warning">
+                    <div class="usuario">
+                        <div class="usuario-lab"><p>Usuário:</p></div>
+                    </div>
+                    <div class="perfil">
+                        <p>Perfil de usuário</p>
+                        <select>
+                                <option value="trabalhador">Trabalhador</option>
+                                <option value="coord-curso">Coordenador de Curso</option>
+                                <option value="coord-nucleo">Coordenador do Núcleo Pedagógico</option>
+                        </select>
+                        <button>Acessar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>      
         
 
 

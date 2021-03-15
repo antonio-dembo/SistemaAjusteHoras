@@ -6,3 +6,11 @@ body {
 }
 
 .hover { cursor: pointer;}
+
+.image {
+
+    width: 500px;
+    height: 200px;
+    position: relative;
+    /* float: left; */
+}
