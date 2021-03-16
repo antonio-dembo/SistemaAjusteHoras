@@ -6,11 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inserir Reajuste</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="D:\Recursos\SistemaAjusteHoras\wwwroot\css\inserir-reajuste.css">
+    <!-- <link rel="stylesheet" type="text/css" href="D:\Recursos\SistemaAjusteHoras\wwwroot\css\inserir-reajuste.css"> -->
     
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="display-6">Main Contanier</h1>
+
+        <div class="col">
+
+            <div class="row p-2">
+                <div class="col">
+                    
+                    <div class="row mb-3">
+                        <label for="staticUsuario" class="col-sm-4 col-form-label">Usuário:</label>
+                        <div class="col-auto">
+                            <input type="text" readonly class="form-control-plaintext" id="staticUsuario" value="Fulano da tal">
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <label for="perfil-input" class="col-sm-4 col-form-label">Perfil:</label>
+                        <div class="col-auto">
+                            <input type="text" readonly class="form-control-plaintext" id="perfil-input" value="ex. trabalhador">
+                        </div>
+                    </div>
+
+                    <div class="container-fluid p-3 bg-danger">
+                        <form class="row g-3">
+
+                            <div class="col-auto">
+                                <label for="inputData" class="form-label">Data</label>
+                                <input type="text" class="form-control" id="inputData" value="dd/mm/aaaa">
+                            </div>
+
+                            <div class="col-auto">
+                                <label for="inputHoraEntrada" class="form-label">Hora Entrada</label>
+                                <input type="text" class="form-control" id="inputHoraEntrada" placeholder="hh:mm">
+                            </div>
+
+                            <div class="col-auto">
+                                <label for="inputHoraSaida" class="form-label">Hora Saída</label>
+                                <input type="text" class="form-control" id="inputHoraSaída" placeholder ="hh:mm">
+                            </div>
+
+                            <div class="col-auto">
+                                <label for="inputJustificativa" class="form-label">Justificativa</label>
+                                <select id="inputJustificativa" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option value="prod-conteudo">Prod. Conteúdo</option>
+                                    <option value="versionamento">Versionamento</option>
+                                    <option value="capacitacao">Capacitação</option>
+                                    <option value="emprestimo">Empréstimo</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <button id="buttonInsereHora" type="submit" class="btn btn-primary">Insere Hora</button>
+                            </div>
+
+                        </form>
+                    </div> 
+                    <!-- container do formulário -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
 
 
 
