@@ -1,0 +1,14 @@
+body{ background-color: lightblue;}
+
+.img-perfil {
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+table {
+    letter-spacing: 1px;;
+    font-size: 0.8m;
+}
+
+.hover { cursor: pointer;}
