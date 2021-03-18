@@ -1,8 +1,15 @@
-body{ background-color: lightblue;}
+body{ 
+    background-color: lightblue;
+}
 
 .img-perfil {
     width: 250px;
     height: 200px;
+    position: relative;
+}
+
+.logo {
+    width: 650px;
     position: relative;
 }
 
