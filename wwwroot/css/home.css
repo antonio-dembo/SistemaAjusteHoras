@@ -1,0 +1,47 @@
+body {
+    margin: 5px;
+    background-color: lightblue;
+    font-family: sans-serif, Arial;
+    
+}
+
+.hover { cursor: pointer;}
+
+#main {
+    width: 800px;
+    position: relative;
+}
+
+.info p{
+    width: 400px;
+    height: 180px;
+    font-size: 12;
+    text-decoration: none;
+    background-color: #d0d0d0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.text-1 {
+    padding: 10px;
+}
+
+.text-2 {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.login-menu {
+    float: left;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.c-lnk-a {
+    text-align:center;
+}
+
+.image {
+    display: flex;
+    width: 100px;
+}

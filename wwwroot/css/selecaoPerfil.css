@@ -1,0 +1,13 @@
+body {
+    margin-top: 20px;
+    background-color: lightblue;
+    font-family: sans-serif, Arial, Verdana;
+}
+
+.hover { cursor: pointer;}
+
+.img-perfil {
+    width: 580px;
+    height: 200px;
+    position: relative;
+}
