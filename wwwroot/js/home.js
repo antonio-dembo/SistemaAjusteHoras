@@ -20,17 +20,20 @@
     
           console.log(emailInput.value, passwordInput.value );
 
+          
+
           if (!isValidEmail(emailInput.value))
           {
+            addInvalidEmail(form)
             console.log("INVALID EMAIL!!")
 
             // Reset values
-            emailInput.value = ""
-            passwordInput.value = ""
-
+            // emailInput.value = ""
+            // passwordInput.value = ""
             return false;
           }
-          
+
+          document.querySelector("#invalidEmailPassword").style.display = "none";   
 
           console.log("NOW CAN SEND FORM!!!")
         }
@@ -42,6 +45,25 @@
   )
 })()
 
+
+const addInvalidEmail = (form) => 
+{
+
+  if(document.querySelector("#invalidEmailPassword") === null)
+  {
+    const msg = "O e-mail informado para autenticação, não é um e-mail válido.";
+
+    const newTweet = document.createElement('div');
+    newTweet.setAttribute("id", "invalidEmailPassword")
+    newTweet.setAttribute("class", "invalid-feedback");
+
+    newTweet.append(`-${msg}`);
+    form.insertBefore(newTweet, form.firstChild)
+
+    newTweet.style.display = "block";
+  }  
+  
+}
 
 function isValidEmail(email) 
 {
