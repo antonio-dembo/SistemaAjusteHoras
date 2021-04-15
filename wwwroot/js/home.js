@@ -1,5 +1,4 @@
 
-
 (function () {
   
   var forms = document.querySelectorAll('.needs-validation')
@@ -7,31 +6,35 @@
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
       form.addEventListener('submit', function (event) {
-        event.preventDefault()
+        
 
         if (!form.checkValidity()) {
-          console.log("IN CHECK VALIDITY!!!")
-          event.stopPropagation()                       
+          event.preventDefault()
+          event.stopPropagation()
+          console.log("IN CHECK VALIDITY!!!")          
         }
         else
-        {
+        {          
           const emailInput = form.elements.email;
           const passwordInput = form.elements.password;
     
           console.log(emailInput.value, passwordInput.value );
 
+          
           if (!isValidEmail(emailInput.value))
           {
+            event.preventDefault()
+            addInvalidEmail(form)
             console.log("INVALID EMAIL!!")
-
-            // Reset values
-            emailInput.value = ""
-            passwordInput.value = ""
-
             return false;
           }
-          
+          const invalidEmailPassword = document.querySelector("#invalidEmailPassword");
 
+          if(invalidEmailPassword !== null)
+          {
+            invalidEmailPassword.style.display = "none";
+          }            
+          
           console.log("NOW CAN SEND FORM!!!")
         }
 
@@ -42,6 +45,25 @@
   )
 })()
 
+
+const addInvalidEmail = (form) => 
+{
+
+  if(document.querySelector("#invalidEmailPassword") === null)
+  {
+    const msg = "O e-mail informado para autenticação, não é um e-mail válido.";
+
+    const newTweet = document.createElement('div');
+    newTweet.setAttribute("id", "invalidEmailPassword")
+    newTweet.setAttribute("class", "invalid-feedback");
+
+    newTweet.append(`-${msg}`);
+    form.insertBefore(newTweet, form.firstChild)
+
+    newTweet.style.display = "block";
+  }  
+  
+}
 
 function isValidEmail(email) 
 {
