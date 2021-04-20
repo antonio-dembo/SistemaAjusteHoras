@@ -21,14 +21,19 @@
           console.log(emailInput.value, passwordInput.value );
 
           
+
           if (!isValidEmail(emailInput.value))
           {
-            event.preventDefault()
             addInvalidEmail(form)
             console.log("INVALID EMAIL!!")
+
+            // Reset values
+            // emailInput.value = ""
+            // passwordInput.value = ""
             return false;
           }
-          const invalidEmailPassword = document.querySelector("#invalidEmailPassword");
+
+          document.querySelector("#invalidEmailPassword").style.display = "none";   
 
           if(invalidEmailPassword !== null)
           {
