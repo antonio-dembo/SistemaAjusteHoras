@@ -6,14 +6,14 @@
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
       form.addEventListener('submit', function (event) {
-        
+
         if (!form.checkValidity()) {
           event.preventDefault()
           event.stopPropagation()
           console.log("IN CHECK VALIDITY!!!")          
         }
         else
-        {          
+        {                    
           const emailInput = form.elements.email;
           const passwordInput = form.elements.password;
     
@@ -28,10 +28,10 @@
             return false;
           }
 
-          if(!isValidEmail(passwordInput.value))
+          if(!isValidPassword(passwordInput.value))
           {
             event.preventDefault()
-            const msg = "O e-mail informado para autenticação, não é um e-mail válido.";
+            const msg = "Usuário ou senha inválido.";
             addInvalidEmailPassword(form , msg)
             console.log("INVALID PASSWORD")
             return false;
@@ -65,7 +65,7 @@ const addInvalidEmailPassword = (form , msg) =>
     newdiv.setAttribute("class", "invalid-feedback");
 
     newdiv.append(`-${msg}`);
-    form.insertBefore(newTdiv, form.firstChild)
+    form.insertBefore(newdiv, form.firstChild)
     newdiv.style.display = "block";
   }  
   
