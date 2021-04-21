@@ -1,5 +1,4 @@
 
-
 (function () {
   
   var forms = document.querySelectorAll('.needs-validation')
@@ -7,34 +6,44 @@
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
       form.addEventListener('submit', function (event) {
-        event.preventDefault()
-
+        
         if (!form.checkValidity()) {
-          console.log("IN CHECK VALIDITY!!!")
-          event.stopPropagation()                       
+          event.preventDefault()
+          event.stopPropagation()
+          console.log("IN CHECK VALIDITY!!!")          
         }
         else
-        {
+        {          
           const emailInput = form.elements.email;
           const passwordInput = form.elements.password;
     
           console.log(emailInput.value, passwordInput.value );
-
           
-
           if (!isValidEmail(emailInput.value))
           {
-            addInvalidEmail(form)
-            console.log("INVALID EMAIL!!")
-
-            // Reset values
-            // emailInput.value = ""
-            // passwordInput.value = ""
+            event.preventDefault();
+            const msg = "O e-mail informado para autenticação, não é um e-mail válido.";
+            addInvalidEmailPassword(form , msg);
+            console.log("INVALID EMAIL!!");
             return false;
           }
 
-          document.querySelector("#invalidEmailPassword").style.display = "none";   
+          if(!isValidEmail(passwordInput.value))
+          {
+            event.preventDefault()
+            const msg = "O e-mail informado para autenticação, não é um e-mail válido.";
+            addInvalidEmailPassword(form , msg)
+            console.log("INVALID PASSWORD")
+            return false;
+          }
 
+          const invalidEmailPassword = document.querySelector("#invalidEmailPassword");
+
+          if(invalidEmailPassword !== null)
+          {
+            invalidEmailPassword.style.display = "none";
+          }            
+          
           console.log("NOW CAN SEND FORM!!!")
         }
 
@@ -46,28 +55,54 @@
 })()
 
 
-const addInvalidEmail = (form) => 
+const addInvalidEmailPassword = (form , msg) => 
 {
-
   if(document.querySelector("#invalidEmailPassword") === null)
   {
-    const msg = "O e-mail informado para autenticação, não é um e-mail válido.";
+    const newdiv= document.createElement('div');
 
-    const newTweet = document.createElement('div');
-    newTweet.setAttribute("id", "invalidEmailPassword")
-    newTweet.setAttribute("class", "invalid-feedback");
+    newdiv.setAttribute("id", "invalidEmailPassword")
+    newdiv.setAttribute("class", "invalid-feedback");
 
-    newTweet.append(`-${msg}`);
-    form.insertBefore(newTweet, form.firstChild)
-
-    newTweet.style.display = "block";
+    newdiv.append(`-${msg}`);
+    form.insertBefore(newTdiv, form.firstChild)
+    newdiv.style.display = "block";
   }  
   
 }
 
-function isValidEmail(email) 
+const isValidEmail = (email) => 
 {
   var emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   return email.match(emailFormat)
+}
 
+const isValidPassword = (value) => 
+{
+  let validated =  true;
+
+  if(!(/\d/g).test(value))
+  {
+    validated = false;
+    console.log("should contain at least one digit")
+  }
+     
+  if(! (/[a-z]/).test(value))
+  {
+    validated = false;
+    console.log("should contain at least one lower case")
+  }
+      
+  if(! (/[A-Z]/).test(value))
+  {
+    validated = false;
+    console.log("should contain at least one upper case")
+  }
+    
+  if(! (/[a-zA-Z0-9]{8,}/).test(value))
+  {
+    validated = false;
+    console.log("should contain at least 8 from the mentioned characters")
+  }
+  return validated;
 }
